@@ -4,6 +4,27 @@ import Searchbar from './partials/Searchbar.vue';
 import Heading from './partials/Heading.vue';
 import Select from './partials/Select.vue';
 import List from './partials/List.vue';
+import Toggle from './partials/Toggle.vue';
+
+
+const options = [
+  {
+    label:'All',
+    value:'all'
+  },
+  {
+    label:'Option 1',
+    value:'option-1'
+  },
+  {
+    label:'Option 2',
+    value:'option-1'
+  },
+  {
+    label:'Option 3',
+    value:'option-3'
+  }
+]
 
 </script>
 
@@ -11,8 +32,9 @@ import List from './partials/List.vue';
   <div class="main-wrapper">
     <Heading message="Todo List"/>
     <div class="search-wrapper">
-        <Searchbar/>
-        <Select/>
+        <Searchbar placeholder-text="Search"/>
+        <Select :options="options"/>
+        <Toggle/>
     </div>
     <List/>
   </div>

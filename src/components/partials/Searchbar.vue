@@ -4,13 +4,15 @@ import Wrapper from '../Wrapper.vue';
 
 import { ref } from 'vue';
 
-defineProps({
+const props = defineProps({
     placeholderText:{
         type: String,
         required:true,
         default:'Search'
     }
-})
+});
+
+const { placeholderText } = props;
 
 </script>
 

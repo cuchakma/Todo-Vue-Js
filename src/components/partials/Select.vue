@@ -1,11 +1,20 @@
 <script setup>
+const props = defineProps({
+    options:{
+        type:Array,
+        required:true
+    }
+});
+
+const {options} = props;
+
 </script>
 
 <template>
     <select id="select-field-wrapper" class="select-field-wrapper">
-        <option value="all">All</option>
-        <option value="option-1">"Option 1"</option>
-        <option value="option-2">"Option 2"</option>
+        <template v-for="value in options">
+            <option :value="value['value']">{{ value['label'] }}</option>
+        </template>
     </select>
 </template>
 
