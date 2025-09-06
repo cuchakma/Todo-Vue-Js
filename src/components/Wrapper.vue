@@ -5,6 +5,7 @@ import Heading from './partials/Heading.vue';
 import Select from './partials/Select.vue';
 import List from './partials/List.vue';
 import Toggle from './partials/Toggle.vue';
+import Add from './partials/Add.vue';
 
 
 const options = [
@@ -34,7 +35,7 @@ const options = [
     <div class="search-wrapper">
         <Searchbar placeholder-text="Search"/>
         <Select :options="options"/>
-        <Toggle/>
+        <Add/>
     </div>
     <List/>
   </div>

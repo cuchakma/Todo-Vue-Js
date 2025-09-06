@@ -194,3 +194,14 @@ input[type="checkbox"] {
   font-weight: bold;
   text-align: center;
 }
+
+.add-icon{
+  display: flex;
+  background: #6C63FF;
+  height: 9vh;
+  width: 2vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
