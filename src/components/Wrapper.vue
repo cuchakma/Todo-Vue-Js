@@ -6,6 +6,7 @@ import Select from './partials/Select.vue';
 import List from './partials/List.vue';
 import Toggle from './partials/Toggle.vue';
 import Add from './partials/Add.vue';
+import { useAppStore } from '../store/appStore';
 
 
 const options = [
@@ -25,7 +26,10 @@ const options = [
     label:'Option 3',
     value:'option-3'
   }
-]
+];
+
+const data                = useAppStore();
+const { showModalAction } = data;
 
 </script>
 
@@ -35,7 +39,7 @@ const options = [
     <div class="search-wrapper">
         <Searchbar placeholder-text="Search"/>
         <Select :options="options"/>
-        <Add/>
+        <Add :onclick="showModalAction"/>
     </div>
     <List/>
   </div>

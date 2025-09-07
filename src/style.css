@@ -95,6 +95,7 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   gap: 10px;
+  height: 40px;
 }
 
 .partials-search-bar{
@@ -107,7 +108,7 @@ button:focus-visible {
 }
 
 .select-field-wrapper{
-  background: #6C63FF;
+  background: #1a1a1a;
   border: 1px solid #C3C1E5;
   color: #fff;
   font-size: 15px;
@@ -197,8 +198,7 @@ input[type="checkbox"] {
 
 .add-icon{
   display: flex;
-  background: #6C63FF;
-  height: 9vh;
+  background: #1a1a1a;
   width: 2vw;
   justify-content: center;
   align-items: center;
